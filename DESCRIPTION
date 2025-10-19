@@ -1,0 +1,32 @@
+Package: aksStat
+Type: Package
+Title: Random Sampling and Cross-Validation Utilities for Statistical Learning
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Aubrey", "Schrameck",
+      email = "aubreyschrameck@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: A collection of functions for sampling and validation in statistical learning. 
+    Includes implementations of the inverse CDF method, accept-reject sampling, 
+    Markov Chain Monte Carlo (MCMC) via the Metropolis algorithm, Gelman diagnostics, 
+    and subset-based cross-validation with support for LDA, QDA, GLM, and KNN models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    MASS,
+    kknn,
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    ggplot2,
+    dplyr,
+    tibble
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 4.0)
+Config/testthat/edition: 3

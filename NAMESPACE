@@ -1,0 +1,2 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(stats, runif, glm, predict, as.formula, binomial)
